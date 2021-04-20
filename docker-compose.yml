@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    # image: php_server
+    container_name: php1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html:delegated
