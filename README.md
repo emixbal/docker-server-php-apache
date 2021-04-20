@@ -6,4 +6,4 @@ repo untuk setup server php. Untuk menjalankan ikuti perintah di bawah ini
 - run 
     ```docker-compose up -d```
 - ✨Magic ✨
-- ur server is ready, open localhost on your broser. Place ur php code inside /src dir
+- ur server is ready, open localhost on your browser. Place ur php code inside /src dir
