@@ -5,3 +5,5 @@ RUN a2enmod rewrite
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 WORKDIR /var/www/html
 RUN chmod -R 755 /var/www/html
+
+RUN git clone --single-branch --branch release http://172.105.122.80:3000/Mitra/mustika.git
