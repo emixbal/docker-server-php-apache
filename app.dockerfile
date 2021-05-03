@@ -3,7 +3,5 @@ RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo
 RUN apt-get install -y git
 RUN a2enmod rewrite
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-WORKDIR /var/www/html
 RUN chmod -R 755 /var/www/html
-
-RUN git clone --single-branch --branch release http://172.105.122.80:3000/Mitra/mustika.git
+WORKDIR /var/www/html
